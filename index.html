@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="main">
+    <div class="part1">
+      <h1 class="heading chroma-animated">Set Killer</h1>
+      <select id="dropdown1">
+        <option value="https://i1.sndcdn.com/artworks-AtMWPC3uBrhDCyRm-DAgttQ-t500x500.jpg">Jason</option>
+        <option value="https://preview.redd.it/hello-fellow-forsaken-player-here-tips-and-tricks-for-v0-2rtho3r6xzhe1.jpeg?auto=webp&s=e24a2e96020a6ea9167a6029856585a522e06ca0">C00lkidd</option>
+        <option value="https://m.gjcdn.net/fireside-post-image/900/40999092-zewcvqkc-v4.webp">John Doe</option>
+        <option value="https://i.pinimg.com/236x/f5/3e/7c/f53e7c0b05a290ecf923995dd1badf15.jpg">1x1x1x1</option>
+      </select>
+      <button id="submitbtn" onclick="submitKiller()">Change Killer</button>
+    </div>
+    <div class="part2">
+      <h1 class="heading chroma-animated" id="survivorheading">Set Survivor</h1>
+      <select id="dropdown2">
+        <option value="https://images.steamusercontent.com/ugc/25433478550531669/E7F644F38EBC86576846EAC9CDF06AE716F53970/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false">Elliot</option>
+        <option value="https://imagedelivery.net/LBWXYQ-XnKSYxbZ-NuYGqQ/86aa035f-30e4-4dfe-f974-d8cb17cfae00/avatarhd">Noob</option>
+        <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbM9dL1YEcE8uGz1PcvNZCENZ5AKvPc5EllA&s">Shedletsky</option>
+        <option value="https://i.pinimg.com/236x/39/67/09/396709cf29fca11ff35e52d4db4d6f18.jpg">Two Time</option>
+        <option value="https://i.ytimg.com/vi/iPWcJrl9nKc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBE5UeeXA7TlLx4Cb6edqnDE8XR5g">Guest 1337</option>
+        <option value="https://pbs.twimg.com/media/Gh6_mO0XoAAbOGR.jpg:large">007n7</option>
+        <option value="https://i.ytimg.com/vi/11cw7di_aVw/sddefault.jpg">Builderman</option>
+        <option value="https://i.namu.wiki/i/HPghpQYZrS3Jk5r4TI5MALyl4JcrS2_I5CRa_CQL6SGTHoVUvuAk6WCQFekDXmfwOxuh3m4TPZ-ZzdRJ84GPwg.webp">Dusekkar</option>
+        <option value="https://imagedelivery.net/LBWXYQ-XnKSYxbZ-NuYGqQ/2c2e750a-db50-4737-594c-23a280f72900/avatarhd">Taph</option>
+        <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCFO1HwooFmIqbad-YXY24dOI27PlaQbFKkw&s">Chance</option>
+      </select>
+      <button id="submitbtn1" onclick="submitsurvivor()">Change Survivor</button>
+    </div>
+  </div>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js" type="module"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js" type="module"></script>
+  <script src="script.js" type="module"></script>
+
+</body>
+</html>

@@ -1,4 +1,6 @@
 import { ref, set } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAYhMBLauYhj5TkEC7Zpg8kTXQOUC-49TE",
@@ -11,8 +13,8 @@ const firebaseConfig = {
     measurementId: "G-XJNL6DK558"
   };
 
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.database();
+    const db = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
 
   window.submitKiller = function submitKiller() {
     const selectedValue = document.getElementById("dropdown1").value;
@@ -37,3 +39,4 @@ const firebaseConfig = {
         console.error("Error writing to database:", error);
       });
   }
+

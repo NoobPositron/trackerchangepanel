@@ -12,8 +12,9 @@ const firebaseConfig = {
     appId: "1:664742131957:web:1f9044573289d5c4fe6dbc",
     measurementId: "G-XJNL6DK558"
   };
-
-    const db = initializeApp(firebaseConfig);
+    
+    const db = firebase.database();
+    const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
 
   window.submitKiller = function submitKiller() {
@@ -39,4 +40,5 @@ const firebaseConfig = {
         console.error("Error writing to database:", error);
       });
   }
+
 
